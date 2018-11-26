@@ -17,7 +17,9 @@ do
       then
         gpio write 4 1;
         ./setbits.sh 15
+        sleep 1      
         gpio write 4 0;
+        ./setbits.sh 0
       fi
     fi
   while [ $pin -eq 0 ]
