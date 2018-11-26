@@ -22,6 +22,8 @@ then
   gpio write 3 1;
 fi
 
+sleep 1;
+
 gpio write 0 0;
 gpio write 1 0;
 gpio write 2 0;
